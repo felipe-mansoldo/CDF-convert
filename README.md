@@ -1,5 +1,5 @@
 # CDF-convert
-Convert Agilent OpenLAB Chromatogram .CDF file into CSV
+Convert Agilent OpenLAB Chromatogram .CDF to CSV
 
 This R script converts Agilent OpenLAB .CDF files to .CSV format.
 With "CDFConverter.R" you can convert a single file or a series of files of a certain folder (in recursive mode).
