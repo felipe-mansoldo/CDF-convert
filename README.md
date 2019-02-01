@@ -12,7 +12,7 @@ You can also choose a destination folder, or in default mode, it will export to 
 source(file="CDFConverter.R")
 ```
 
-## Converting a single .CDF file
+## Converting a single .CDF file to .CSV
 For this you must call the function SingleCDFtoCSV(CDF_file_path, OutputDirectory)
 
 Example:
