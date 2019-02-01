@@ -25,7 +25,7 @@ MultipleCDFtoCSV <- function(InitialFolder,OutputDirectory=""){
   n_problem=0
   for (i in 1:length(CDFfiles)){
     print(paste0("Working on ",FilesNames[i]))
-    convert <- try(write.table(ConvertCDFtoRAW(CDFfiles[1]), file = paste0(FolderNames[i],"/",ExportFilesNames[i]),row.names = FALSE,sep=";", dec="."))
+    convert <- try(write.table(ConvertCDFtoRAW(CDFfiles[i]), file = paste0(FolderNames[i],"/",ExportFilesNames[i]),row.names = FALSE,sep=";", dec="."))
     if (!is.null(convert)){
       print(paste0("Error ",FilesNames[i]))
       n_problem=n_problem+1;
@@ -46,7 +46,7 @@ SingleCDFtoCSV <- function(CDF_file_path,OutputDirectory=""){
   n_problem=0
   for (i in 1:length(CDFfiles)){
     print(paste0("Working on ",FilesNames[i]))
-    convert <- try(write.table(ConvertCDFtoRAW(CDFfiles[1]), file = paste0(FolderNames[i],"/",ExportFilesNames[i]),row.names = FALSE,sep=";", dec="."))
+    convert <- try(write.table(ConvertCDFtoRAW(CDFfiles[i]), file = paste0(FolderNames[i],"/",ExportFilesNames[i]),row.names = FALSE,sep=";", dec="."))
     if (!is.null(convert)){
       print(paste0("Error ",FilesNames[i]))
       n_problem=n_problem+1;
